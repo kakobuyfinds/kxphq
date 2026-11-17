@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index,follow">
+  <title>KakoBuy spreadsheet | CAFANS Finds, QC &amp; Shipping Checklist</title>
+  <meta name="description" content="Browse CAFANS shoes, sweatshirts, T-shirts and jackets in this independent KakoBuy spreadsheet. Compare reference prices, check QC and estimate your total order cost.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="KakoBuy spreadsheet | CAFANS Finds">
+  <meta property="og:description" content="Browse CAFANS product listings and compare sizing, QC photos and shipping costs before ordering.">
+  <meta name="theme-color" content="#182e26">
+  <!--
+    Filename: index.html
+    Search research: Results surfaced for the exact query included spreadsheetkakobuy.com,
+    spreadsheet-kakobuy.com and kakobuy-spreadsheet.com/features/faq?lang=english.
+    A fixed Google first-page order was not verified. These pages emphasize category
+    filters, QC, shipping and FAQs. This page adds direct CAFANS listing links, a
+    measurable QC checklist and an order-cost calculator with separate fee inputs.
+    Catalog source: https://cafans.com/ Featured Product Finds. Prices are a snapshot.
+    Indexing: Pending because no public deployment URL or verified property was provided.
+    After deploying, add the final self-referencing canonical, then use URL Inspection
+    in Google Search Console and URL Submission in Bing Webmaster Tools.
+    Google: https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl
+    Bing: https://www.bing.com/webmasters/help/URL-Submission-62f2860b
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "KakoBuy spreadsheet",
+    "description": "Independent CAFANS product shortlist with a buying checklist and a shipping budget calculator.",
+    "inLanguage": "en",
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Leather Slides","url":"https://cafans.com/goods-158791.html"},
+        {"@type":"ListItem","position":2,"name":"Sweatshirt","url":"https://cafans.com/goods-158792.html"},
+        {"@type":"ListItem","position":3,"name":"Unisex Embroidered Oversized T-Shirt","url":"https://cafans.com/goods-158200.html"},
+        {"@type":"ListItem","position":4,"name":"Corteiz Jacket","url":"https://cafans.com/goods-158279.html"}
+      ]
+    }
+  }
+  </script>
+  <style>
+    :root{color-scheme:light;--ink:#182e26;--paper:#f5f4eb;--white:#fffef8;--line:#d3dcd3;--green:#d9f482;--muted:#4d6156}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+    a{color:inherit;text-underline-offset:.22em}
+    a:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #528821;outline-offset:4px}
+    .wrap{width:min(68rem,calc(100% - 2rem));margin-inline:auto}
+    .hero{background:var(--ink);color:var(--white);text-align:center;padding:clamp(3.5rem,10vw,8rem) 0;border-bottom:.55rem solid var(--green)}
+    .hero p{max-width:38rem;margin:1rem auto 1.75rem;color:#e3eddf}
+    h1,h2,h3,p{margin-top:0}
+    h1{font:normal clamp(3rem,9vw,6.8rem)/.95 Georgia,serif;letter-spacing:-.06em;margin-bottom:1rem}
+    h2{font:normal clamp(2rem,5vw,3.5rem)/1.05 Georgia,serif;letter-spacing:-.04em;margin-bottom:.7rem}
+    h3{font-size:1.15rem;line-height:1.3;margin-bottom:.55rem}
+    .actions{display:flex;justify-content:center;gap:.75rem;flex-wrap:wrap}
+    .cta{display:inline-flex;align-items:center;justify-content:center;min-height:3rem;padding:.5rem 1.2rem;background:var(--green);color:var(--ink);border:1px solid var(--green);border-radius:2rem;text-decoration:none;font-weight:700}
+    .cta.secondary{background:transparent;color:var(--white)}
+    .cta:hover{box-shadow:0 0 0 3px #ffffff36}
+    main{padding-block:3rem}
+    section+section{margin-top:3.25rem}
+    .lead,.note{color:var(--muted)}
+    .note{font-size:.91rem}
+    .toolbar{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin:1.5rem 0 1rem}
+    .toolbar label{display:flex;align-items:center;gap:.6rem}
+    select,input{font:inherit;color:inherit;background:var(--white);border:1px solid #889b8d;border-radius:.4rem;padding:.45rem .6rem;min-width:0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(14rem,100%),1fr));gap:.9rem}
+    .card,.panel{background:var(--white);border:1px solid var(--line);border-radius:.9rem;padding:1.25rem}
+    .card{display:flex;flex-direction:column;align-items:flex-start}
+    .card h3{min-height:2.6em}
+    .tag{background:#e8efdd;padding:.15rem .65rem;border-radius:1rem;font-size:.85rem;margin-bottom:.8rem}
+    .price{font-weight:750;margin-bottom:.7rem}
+    .card a{margin-top:auto;font-weight:650}
+    [hidden]{display:none!important}
+    .categories{display:flex;gap:.55rem 1rem;flex-wrap:wrap;margin-top:1rem}
+    .guide{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(17rem,100%),1fr));gap:.9rem}
+    .guide p{margin-bottom:0}
+    .fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(12rem,100%),1fr));gap:.75rem;margin:1rem 0}
+    .fields label{display:grid;gap:.3rem}
+    output{font-weight:750}
+    details{border-bottom:1px solid var(--line);padding:.9rem 0}
+    summary{cursor:pointer;font-weight:700}
+    details p{margin:.55rem 0 0;max-width:65ch}
+    footer{padding:1.25rem 0;border-top:1px solid var(--line);color:var(--muted)}
+    footer p{margin:0}
+  </style>
+<link rel="canonical" href="https://kakobuyfinds.github.io/kxphq/">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <h1>KakoBuy spreadsheet</h1>
+      <p>Browse a shortlist of shoes and streetwear from CAFANS. Check the seller’s size chart, plan your QC photos and compare the full order cost before you buy.</p>
+      <nav class="actions" aria-label="CAFANS links">
+        <a class="cta" href="https://cafans.com">KakoBuy spreadsheet</a>
+        <a class="cta secondary" href="https://cafans.com">Buy it now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section aria-labelledby="catalog-title">
+      <h2 id="catalog-title">CAFANS product directory</h2>
+      <p class="lead">These listings come from CAFANS Featured Product Finds. Prices are reference estimates in USD. Open the listing to check the latest options and price.</p>
+
+      <div class="toolbar" id="catalog-tools" hidden>
+        <label for="category">Category
+          <select id="category">
+            <option value="all">All categories</option>
+            <option value="shoes">Shoes</option>
+            <option value="sweatshirts">Hoodies &amp; sweatshirts</option>
+            <option value="tees">T-shirts</option>
+            <option value="jackets">Jackets</option>
+          </select>
+        </label>
+        <span id="count" role="status"></span>
+      </div>
+
+      <div class="grid" id="products">
+        <article class="card" data-category="shoes">
+          <span class="tag">Shoes</span>
+          <h3>Leather Slides</h3>
+          <p class="price">$62.36 USD</p>
+          <a href="https://cafans.com/goods-158791.html" aria-label="View Leather Slides on CAFANS">View listing</a>
+        </article>
+        <article class="card" data-category="sweatshirts">
+          <span class="tag">Sweatshirts</span>
+          <h3>Sweatshirt</h3>
+          <p class="price">$27.50 USD</p>
+          <a href="https://cafans.com/goods-158792.html" aria-label="View Sweatshirt on CAFANS">View listing</a>
+        </article>
+        <article class="card" data-category="tees">
+          <span class="tag">T-shirts</span>
+          <h3>Unisex Embroidered Oversized T-Shirt</h3>
+          <p class="price">$32.64 USD</p>
+          <a href="https://cafans.com/goods-158200.html" aria-label="View Unisex Embroidered Oversized T-Shirt on CAFANS">View listing</a>
+        </article>
+        <article class="card" data-category="jackets">
+          <span class="tag">Jackets</span>
+          <h3>Corteiz Jacket</h3>
+          <p class="price">$42.78 USD</p>
+          <a href="https://cafans.com/goods-158279.html" aria-label="View Corteiz Jacket on CAFANS">View listing</a>
+        </article>
+      </div>
+
+      <nav class="categories" aria-label="Full CAFANS categories">
+        <a href="https://cafans.com/category-911-Shoes.html">All shoes</a>
+        <a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">All hoodies and sweaters</a>
+        <a href="https://cafans.com/category-913-T-Shirts.html">All T-shirts</a>
+        <a href="https://cafans.com/category-914-Jackets.html">All jackets</a>
+      </nav>
+    </section>
+
+    <section aria-labelledby="checks-title">
+      <h2 id="checks-title">What to check before ordering</h2>
+      <div class="guide">
+        <article class="panel">
+          <h3>Save the listing and variant</h3>
+          <p>Open a CAFANS product page and locate its original marketplace listing. Save the URL, color and size together. For tops, compare chest width, length and shoulders with a garment you own. For shoes, compare your foot length with the seller’s size chart.</p>
+        </article>
+        <article class="panel">
+          <h3>Plan your warehouse QC photos</h3>
+          <p>Check what photos your agent offers. For shoes, request size-label and outsole photos. For clothing, check the seams, color and measurements. If you spot a mismatch, check the return or exchange deadline before approving dispatch.</p>
+        </article>
+        <article class="panel">
+          <h3>Compare shipping quotes</h3>
+          <p>Ask for the packed weight and dimensions once your items are ready. Check how each shipping line calculates billable weight and whether the quote includes insurance or taxes. Compare quotes for the same destination and parcel.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel" id="budget-panel" aria-labelledby="budget-title" hidden>
+      <h2 id="budget-title">Order budget calculator</h2>
+      <p class="lead">Enter estimates in USD. Include taxes or duties in other charges if they are separate from the shipping quote.</p>
+      <form id="budget">
+        <div class="fields">
+          <label>Items <input id="items" type="number" min="0" max="999999" step="0.01" inputmode="decimal" placeholder="0.00"></label>
+          <label>Domestic delivery <input id="domestic" type="number" min="0" max="999999" step="0.01" inputmode="decimal" placeholder="0.00"></label>
+          <label>International shipping <input id="shipping" type="number" min="0" max="999999" step="0.01" inputmode="decimal" placeholder="0.00"></label>
+          <label>Other charges <input id="other" type="number" min="0" max="999999" step="0.01" inputmode="decimal" placeholder="0.00"></label>
+        </div>
+        <output id="total" for="items domestic shipping other" aria-live="polite">Estimated total $0.00</output>
+      </form>
+    </section>
+
+    <section aria-labelledby="faq-title">
+      <h2 id="faq-title">KakoBuy spreadsheet FAQ</h2>
+      <details>
+        <summary>Where do the product links go?</summary>
+        <p>The product links open CAFANS detail pages. Check the original marketplace link and the available options there before placing an order through your chosen agent.</p>
+      </details>
+      <details>
+        <summary>Does the listed price include shipping?</summary>
+        <p>The directory shows reference item prices. Check the seller’s domestic delivery charge and get a separate quote for international shipping and any agent fees.</p>
+      </details>
+      <details>
+        <summary>What should I do if an item or variant is unavailable?</summary>
+        <p>Open the matching CAFANS category to look for another listing. Compare the new seller’s size chart and confirm availability before ordering.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap"><p class="note">Independent shopping guide. Product listings are sourced from CAFANS.</p></div>
+  </footer>
+
+  <script>
+    const filter = document.querySelector("#category");
+    const cards = [...document.querySelectorAll("#products .card")];
+    const count = document.querySelector("#count");
+
+    function filterListings() {
+      let visibleCount = 0;
+      for (const card of cards) {
+        card.hidden = filter.value !== "all" && card.dataset.category !== filter.value;
+        if (!card.hidden) visibleCount += 1;
+      }
+      count.textContent = `${visibleCount} ${visibleCount === 1 ? "listing" : "listings"}`;
+    }
+
+    filter.addEventListener("change", filterListings);
+    filterListings();
+    document.querySelector("#catalog-tools").hidden = false;
+
+    const budget = document.querySelector("#budget");
+    const amounts = [...budget.querySelectorAll("input")];
+    const total = document.querySelector("#total");
+    const currency = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" });
+
+    function updateBudget() {
+      if (amounts.some(input => !input.validity.valid)) {
+        total.textContent = "Enter valid non-negative amounts with up to two decimal places.";
+        return;
+      }
+      const cents = amounts.reduce((sum, input) => sum + Math.round((input.valueAsNumber || 0) * 100), 0);
+      total.textContent = `Estimated total ${currency.format(cents / 100)}`;
+    }
+
+    budget.addEventListener("input", updateBudget);
+    budget.addEventListener("submit", event => event.preventDefault());
+    updateBudget();
+    document.querySelector("#budget-panel").hidden = false;
+  </script>
+</body>
+</html>
